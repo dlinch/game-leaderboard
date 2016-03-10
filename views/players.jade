@@ -2,8 +2,8 @@ extends layout
 
 block content
   .page-header
-    h1 = title
-    h2 = Hello!
+    h1 #{title}
+    
   .row
   each player in players
-    h3 #{player.name}
+    h3 #{player.first_name}
